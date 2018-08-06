@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Products | Springer Nature</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="IE=edge" httpEquiv="X-UA-Compatible" />
+    <meta name="description" content="  为了携手科研共同体促进探索发现，我们专注于让您快速便捷地获取最相关和最重要的科研内容，这包括探索新的方法来提供个性化的内容，并尽可能将其传播给最广泛的受众。" />
+
+    <meta name="google-site-verification" content="-JVT1U_ajuWw1CQxHC7kxyRa1t7fK3Uv7Y7muf43JpY" />
+    <meta name="google-site-verification" content="pGgCxItPY8TaGQGZyJMzlIgvAnqoYOm7gmkiLqEltR8" />
+
+    <meta property="fb:pages" content="341168879741, 143932312346551, 199235833463190, 145327659223282, 304238573037854, 346209515556394, 99912541035, 108064145914608, 370429855420, 170400356321916, 273358886101252, 370987992963178, 1565916643629420, 424373190938938, 152586274808123, 152749531404582, 274648772592090, 168287986591458, 284820978207661, 121336764582486, 174395066291972, 124330454291947, 58364190265, 114336798618606, 177450032338982, 460115770673632, 526326927441845, 401070179903991, 35223474166, 2055004118104490, 227993570999679, 121053321387843, 146393288729580" />
+
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+
+    <div id="app">
+        <div class="header">
+            <div class="header-center">
+                <div class="header-center-left">
+                    <img src="./assets/logo-springernature.svg" />
+                </div>
+                <div class="header-center-right">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                            <button class="dropdown-item" type="button">Action</button>
+                            <button class="dropdown-item" type="button">Another action</button>
+                            <button class="dropdown-item" type="button">Something else here</button>
+                        </div>
+                    </div>
+                    <div class="dropdown ml20">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-on:click="changeLanguage ">
+                            language
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                            <button class="dropdown-item" type="button">简体中文</button>
+                            <button class="dropdown-item" type="button">English</button>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+
+        <div class="content">
+
+            <div class="main-layout image-title-description">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators h300">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner h300">
+                        <div class="carousel-item active h300">
+                            <img src="./assets/v4.jpeg" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>标题1</h5>
+                                <p>随便一些描述</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item h300">
+                            <img src="./assets/v4.jpeg" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>标题2</h5>
+                                <p>随便一些描述</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item h300">
+                            <img src="./assets/v4.jpeg" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>标题三</h5>
+                                <p>随便写一些描述</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="main-layout image-title-description">
+                <div class="main-layout-center">
+                    <div class="left">
+                        <p>
+                            为了携手科研共同体促进探索发现，我们专注于让您快速便捷地获取最相关和最重要的科研内容，这包括探索新的方法来提供个性化的内容，并尽可能将其传播给最广泛的受众。
+                        </p>
+
+                        <div class="point-wrap">
+                            <div>引领学术图书的出版</div>
+                            <div>引领学术图书的出版</div>
+                            <div>引领学术图书的出版</div>
+                            <div>引领学术图书的出版</div>
+                        </div>
+                    </div>
+
+                    <div class="right">
+                        <div class="library">
+                            <h2></h2>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-layout">
+                <div class="main-layout-center">
+                    
+                </div>
+            </div>
+
+            <div class="main-layout">
+                <div class="main-layout-center">
+                    
+                </div>
+            </div>
+
+
+        </div>
+        {{ message }}
+    </div>
+    <script src="index.js"></script>
+
+</body>
+</html>
