@@ -301,10 +301,12 @@ html, body {
 	}
 	.footer .top-bar {
 		display: flex;
+		margin-bottom: 30px;
 	}
 	.footer .top-bar ul {
-		width: 160px;
-		margin-right: 10px;
+		width: 180px;
+		margin-right: 20px;
+		padding: 0;
 	}
 	.footer .top-bar li {
 		height: 32px;
@@ -319,9 +321,31 @@ html, body {
 		font-size: 14px;
 		color: #8faec1;
 	}
+	.footer .top-bar .t a {
+		color: #ffffff;
+	}
+	.footer .top-bar .t2 {
+		margin-top: .625rem;
+	}
+	.footer .top-bar .right-wrap {
+		width: 360px;
+	}
+	.footer .top-bar .right-wrap .about-us {
+		border-top: 0.0625rem solid #486a7e;
+	}
+	.footer .top-bar .right-wrap .about-us p:first-child {
+		margin-top: 10px;
+	}
+
 	.footer .bottom {
 		display: flex;
 		border-top: 0.0625rem solid #486a7e;
     	padding: 1.25rem 0;
+	}
+	.footer .bottom  > div {
+		margin-right: 2rem;
+	}
+	.footer .bottom  > div a{
+		color: #8faec1
 	}
 }
