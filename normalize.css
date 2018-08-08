@@ -95,6 +95,10 @@ strong {
   font-weight: bolder;
 }
 
+button {
+  cursor: pointer;
+}
+
 code,
 kbd,
 samp {

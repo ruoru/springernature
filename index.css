@@ -14,6 +14,10 @@ html, body {
 .ml20 {
 	margin-left: 20px;
 }
+.btn-1 {
+	border: 1px solid #b3b3b3;
+	background-color: #ffffff;
+}
 
 .bg-gray {
 	background-color: #ebf1f5;
@@ -23,13 +27,13 @@ html, body {
 .h-type1 {
 	color: #486a7e;
 	border-bottom: 3px solid #dfedf2;
-	padding: 16px 0;
+	padding: 0 0 16px;
 }
 
 .h-type2 {
 	color: #486a7e;
 	border-bottom: 3px solid #ffffff;
-	padding: 16px 0;
+	padding: 0 0 16px;
 }
 
 .home-cards {
@@ -117,6 +121,7 @@ html, body {
 	.main-layout-center {
 		width: 1200px;
 		margin: 0 auto;
+		padding: 2rem 0;
 	}
 
 
@@ -257,6 +262,7 @@ html, body {
 	}
 	.n6 .teaser-wrap {
 		display: flex;
+		margin-top: 20px;
 	}
 	.n6 .teaser {
 		display: flex;
