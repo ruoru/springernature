@@ -17,6 +17,7 @@ html, body {
 .btn-1 {
 	border: 1px solid #b3b3b3;
 	background-color: #ffffff;
+	color: #999999;
 }
 
 .bg-gray {
@@ -181,10 +182,9 @@ html, body {
 
 
 	.buttons {
-		height: 120px;
+		overflow: hidden;
 	}
 	.buttons button {
-		margin-top: 39px;
 		height: 42px;
 		border: 1px solid #d1d1d1;
 	    border-radius: 8px;
@@ -223,7 +223,7 @@ html, body {
 	}
 
 	.n4 {
-		padding: 20px 0 40px;
+
 	}
 	.n4 .home-cards {
 		margin-top: 30px;
@@ -237,7 +237,6 @@ html, body {
 	}
 
 	.n5 {
-		padding: 20px 0 40px;
 	}
 	.n5 .text-wrap {
 		margin-top: 30px;
@@ -258,7 +257,6 @@ html, body {
 
 
 	.n6 {
-		padding: 20px 0 40px;
 	}
 	.n6 .teaser-wrap {
 		display: flex;
