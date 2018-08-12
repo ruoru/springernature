@@ -31,21 +31,21 @@
                 <div class="header-center-right">
                     <div class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle btn-1" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Dropdown
+                            {{ language[languageValue].nav1 }}
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                            <button class="dropdown-item" type="button">Action</button>
-                            <button class="dropdown-item" type="button">Another action</button>
-                            <button class="dropdown-item" type="button">Something else here</button>
+                            <button class="dropdown-item" type="button">{{ language[languageValue].nav1Sub1 }}</button>
+                            <button class="dropdown-item" type="button">{{ language[languageValue].nav1Sub2 }}</button>
+                            <button class="dropdown-item" type="button">{{ language[languageValue].nav1Sub3 }}</button>
                         </div>
                     </div>
                     <div class="dropdown ml20">
                         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-on:click="changeLanguage ">
-                            language
+                            {{ languageValue === 'ZH'? '简体中文': 'English' }}
                         </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                            <button class="dropdown-item" type="button">简体中文</button>
-                            <button class="dropdown-item" type="button">English</button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2" v-on:click='changeLanguage'>
+                            <button class="dropdown-item" type="button" value="ZH">简体中文</button>
+                            <button class="dropdown-item" type="button" value="EN">English</button>
                         </div>
                     </div>
                  </div>
@@ -65,22 +65,22 @@
                         <div class="carousel-item active h300">
                             <img src="./assets/v4.jpeg" alt="...">
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>标题1</h5>
-                                <p>随便一些描述</p>
+                                <h5>{{ language[languageValue].n1Title1 }}</h5>
+                                <p>{{ language[languageValue].n1Description1 }}</p>
                             </div>
                         </div>
                         <div class="carousel-item h300">
                             <img src="./assets/v4.jpeg" alt="...">
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>标题2</h5>
-                                <p>随便一些描述</p>
+                                <h5>{{ language[languageValue].n1Title2 }}</h5>
+                                <p>{{ language[languageValue].n1Description2 }}</p>
                             </div>
                         </div>
                         <div class="carousel-item h300">
                             <img src="./assets/v4.jpeg" alt="...">
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>标题三</h5>
-                                <p>随便写一些描述</p>
+                                <h5>{{ language[languageValue].n1Title3 }}</h5>
+                                <p>{{ language[languageValue].n1Description3 }}</p>
                             </div>
                         </div>
                     </div>
@@ -122,20 +122,20 @@
 
             <div class="main-layout buttons">
                 <div class="main-layout-center">
-                    <button>按钮一</button>
-                    <button>按钮一</button>
-                    <button>按钮一</button>
-                    <button>按钮一</button>
-                    <button>按钮一</button>
-                    <button>按钮一</button>
+                    <button>{{ language[languageValue].n3Button1 }}</button>
+                    <button>{{ language[languageValue].n3Button2 }}</button>
+                    <button>{{ language[languageValue].n3Button3 }}</button>
+                    <button>{{ language[languageValue].n3Button4 }}</button>
+                    <button>{{ language[languageValue].n3Button5 }}</button>
+                    <button>{{ language[languageValue].n3Button6 }}</button>
                 </div>
             </div>
 
             <div class="main-layout advancing bg-gray">
                 <div class="main-layout-center">
                     <div class="left">
-                        <p class="main-text">我们是一家致力于为全球科研界提供最佳服务的出版机构。我们帮助作者与人分享自己的新发现，帮助科研人员寻找、获得和了解他人的科研工作，并向图书馆和机构提供技术和数据上的创新服务。</p>
-                        <p>我们利用自身的市场地位和影响力来支持对于科研共同体有重要意义的事务——捍卫科学，引领开放获取，大力倡导最高的科研质量和伦理标准。</p>
+                        <p class="main-text">{{ language[languageValue].n4P1 }}</p>
+                        <p>{{ language[languageValue].n4P2 }}</p>
                     </div>
 
                     <div class="right">
@@ -146,7 +146,7 @@
 
             <div class="main-layout product">
                 <div class="main-layout-center">
-                    <h2 class="h-type1">了解我们的产品</h2>
+                    <h2 class="h-type1">{{ language[languageValue].n5Title }}</h2>
 
                     <div class="home-cards">
                         <div class="card bg-gray">
@@ -154,8 +154,8 @@
                                 <img src="./assets/1.svg" />
                             </div>
                             <div class="text-wrap">
-                                <h5>推动内容分享</h5>
-                                <p>SharedIt（“易分享”）作为一项推动内容免费分享的举措，可以让科研人员方便、快速、合法地与科研同行及更多的人，分享自己的论文内容。</p>
+                                <h5>{{ language[languageValue].n5Card1Title }}</h5>
+                                <p>{{ language[languageValue].n5Card1Description }}</p>
                             </div>
                         </div>
 
@@ -164,8 +164,8 @@
                                 <img src="./assets/1.svg" />
                             </div>
                             <div class="text-wrap">
-                                <h5>推动内容分享</h5>
-                                <p>SharedIt（“易分享”）作为一项推动内容免费分享的举措，可以让科研人员方便、快速、合法地与科研同行及更多的人，分享自己的论文内容。</p>
+                                <h5>{{ language[languageValue].n5Card2Title }}</h5>
+                                <p>{{ language[languageValue].n5Card2Description }}</p>
                             </div>
                         </div>
 
@@ -174,8 +174,8 @@
                                 <img src="./assets/1.svg" />
                             </div>
                             <div class="text-wrap">
-                                <h5>推动内容分享</h5>
-                                <p>SharedIt（“易分享”）作为一项推动内容免费分享的举措，可以让科研人员方便、快速、合法地与科研同行及更多的人，分享自己的论文内容。</p>
+                                <h5>{{ language[languageValue].n5Card3Title }}</h5>
+                                <p>{{ language[languageValue].n5Card3Description }}</p>
                             </div>
                         </div>
 
@@ -184,8 +184,8 @@
                                 <img src="./assets/1.svg" />
                             </div>
                             <div class="text-wrap">
-                                <h5>推动内容分享</h5>
-                                <p>SharedIt（“易分享”）作为一项推动内容免费分享的举措，可以让科研人员方便、快速、合法地与科研同行及更多的人，分享自己的论文内容。</p>
+                                <h5>{{ language[languageValue].n5Card4Title }}</h5>
+                                <p>{{ language[languageValue].n5Card4Description }}</p>
                             </div>
                         </div>
                     </div>
@@ -194,7 +194,7 @@
 
             <div class="main-layout bg-gray n4">
                 <div class="main-layout-center">
-                    <h2 class="h-type2">创先之举</h2>
+                    <h2 class="h-type2">{{ language[languageValue].n6Title }}</h2>
 
                     <div class="home-cards">
                         <div class="card bg-gray">
@@ -202,8 +202,8 @@
                                 <img src="./assets/vv1.jpeg" />
                             </div>
                             <div class="text-wrap">
-                                <h5>推动内容分享</h5>
-                                <p>SharedIt（“易分享”）作为一项推动内容免费分享的举措，可以让科研人员方便、快速、合法地与科研同行及更多的人，分享自己的论文内容。</p>
+                                <h5>{{ language[languageValue].n6Card1Title }}</h5>
+                                <p>{{ language[languageValue].n6Card1Description }}</p>
                             </div>
                         </div>
 
@@ -212,8 +212,8 @@
                                 <img src="./assets/vv1.jpeg" />
                             </div>
                             <div class="text-wrap">
-                                <h5>推动内容分享</h5>
-                                <p>SharedIt（“易分享”）作为一项推动内容免费分享的举措，可以让科研人员方便、快速、合法地与科研同行及更多的人，分享自己的论文内容。</p>
+                                <h5>{{ language[languageValue].n6Card2Title }}</h5>
+                                <p>{{ language[languageValue].n6Card2Description }}</p>
                             </div>
                         </div>
 
@@ -222,8 +222,8 @@
                                 <img src="./assets/vv1.jpeg" />
                             </div>
                             <div class="text-wrap">
-                                <h5>推动内容分享</h5>
-                                <p>SharedIt（“易分享”）作为一项推动内容免费分享的举措，可以让科研人员方便、快速、合法地与科研同行及更多的人，分享自己的论文内容。</p>
+                                <h5>{{ language[languageValue].n6Card3Title }}</h5>
+                                <p>{{ language[languageValue].n6Card3Description }}</p>
                             </div>
                         </div>
 
@@ -234,13 +234,15 @@
 
             <div class="main-layout n5">
                 <div class="main-layout-center">
-                    <h2 class="h-type1">来自客户的反馈</h2>
+                    <h2 class="h-type1">{{ language[languageValue].n7Title }}</h2>
 
                     <div class="richtext">
-                        <p>
-                            ...我与编辑及工作人员的互动是非常重要的。&nbsp;我想强调他们的编辑在我发表这篇论文中起了很大作用。 他真的为论文的逻辑框架和实验的结论提供反馈，从而测试某些假设...编辑是论文发布的一个关键。
-                        </p>
-                        <p class="author">Michael M. Halassa, M.D., Ph.D.</p>
+                        <p>{{ language[languageValue].n7Person1Description }}</p>
+                        <p class="author">{{ language[languageValue].n7Person1Name }}</p>
+                    </div>
+                    <div class="richtext">
+                        <p>{{ language[languageValue].n7Person2Description }}</p>
+                        <p class="author">{{ language[languageValue].n7Person2Name }}</p>
                     </div>
 
                 </div>
@@ -248,7 +250,7 @@
 
             <div class="main-layout bg-gray n6">
                 <div class="main-layout-center">
-                    <h2 class="h-type2">关注我们</h2>
+                    <h2 class="h-type2">{{ language[languageValue].n8Title }}</h2>
 
                     <div class="teaser-wrap">
                         <div class="teaser">
@@ -256,7 +258,7 @@
                                 <img src="./assets/2.svg" />
                             </div>
                             <div class="contact">
-                                <p>关注我们的微信</p>
+                                <p>{{ language[languageValue].n8Card1Description }}</p>
                             </div>
                         </div>
 
@@ -265,7 +267,7 @@
                                 <img src="./assets/2.svg" />
                             </div>
                             <div class="contact">
-                                <p>关注我们的微信</p>
+                                <p>{{ language[languageValue].n8Card2Description }}</p>
                             </div>
                         </div>
 
@@ -274,7 +276,7 @@
                                 <img src="./assets/2.svg" />
                             </div>
                             <div class="contact">
-                                <p>关注我们的微信</p>
+                                <p>{{ language[languageValue].n8Card3Description }}</p>
                             </div>
                         </div>
                     </div>
@@ -287,48 +289,43 @@
             <div class="footer-center">
                 <div class="top-bar">
                     <ul>
-                        <li class="t">科研人员</li>
-                        <li><a href="">产品</a></li>
-                        <li><a href="">产品功能</a></li>
-                        <li><a href="">产品</a></li>
-                        <li><a href="">产品功能</a></li>
-                        <li><a href="">产品</a></li>
+                        <li class="t">{{ language[languageValue].footerC1Title }}</li>
+                        <li><a href="">{{ language[languageValue].footerC1Row1 }}</a></li>
+                        <li><a href="">{{ language[languageValue].footerC1Row2 }}</a></li>
+                        <li><a href="">{{ language[languageValue].footerC1Row3 }}</a></li>
                     </ul>
                     <ul>
-                        <li class="t">科研人员</li>
-                        <li><a href="">产品功能</a></li>
-                        <li><a href="">产品功能</a></li>
-                        <li><a href="">产品功能</a></li>
-                        <li><a href="">产品功能</a></li>
-                        <li><a href="">产品功能</a></li>
+                        <li class="t">{{ language[languageValue].footerC2Title }}</li>
+                        <li><a href="">{{ language[languageValue].footerC2Row1 }}</a></li>
+                        <li><a href="">{{ language[languageValue].footerC2Row2 }}</a></li>
+                        <li><a href="">{{ language[languageValue].footerC2Row3 }}</a></li>
+                        <li><a href="">{{ language[languageValue].footerC2Row4 }}</a></li>
                     </ul>
                     <ul>
-                        <li class="t">科研人员</li>
-                        <li><a href="">产品</a></li>
-                        <li><a href="">产品功能</a></li>
-                        <li><a href="">产品</a></li>
-                        <li><a href="">产品功能</a></li>
-                        <li><a href="">产品</a></li>
+                        <li class="t">{{ language[languageValue].footerC3Title }}</li>
+                        <li><a href="">{{ language[languageValue].footerC3Row1 }}</a></li>
+                        <li><a href="">{{ language[languageValue].footerC3Row2 }}</a></li>
+                        <li><a href="">{{ language[languageValue].footerC3Row3 }}</a></li>
+                        <li><a href="">{{ language[languageValue].footerC3Row4 }}</a></li>
+                        <li><a href="">{{ language[languageValue].footerC3Row5 }}</a></li>
                     </ul>
                     <ul>
-                        <li class="t">科研人员</li>
-                        <li><a href="">产品功能</a></li>
-                        <li><a href="">产品</a></li>
-                        <li><a href="">产品功能</a></li>
-                        <li><a href="">产品</a></li>
-                        <li><a href="">产品功能</a></li>
+                        <li class="t">{{ language[languageValue].footerC4Title }}</li>
+                        <li><a href="">{{ language[languageValue].footerC4Row1 }}</a></li>
+                        <li><a href="">{{ language[languageValue].footerC4Row2 }}</a></li>
+                        <li><a href="">{{ language[languageValue].footerC4Row3 }}</a></li>
                     </ul>
                     <div class="right-wrap">
                         <div class="t">
-                            <a href="">科研人员</a>
+                            <a href="">{{ language[languageValue].footerC5Title1 }}</a>
                         </div>
                         <div class="t t2">
-                            <a href="">科研人员</a>
+                            <a href="">{{ language[languageValue].footerC5Title2 }}</a>
                         </div>
                         <div class="about-us">
-                            <p>关于我们</p>
-                            <p>我们是一家全球领先的从事科技、教育和专业出版的机构。更多资讯，请点击以下图标，访问我们的主网站。</p>
-                            <button>Springer Nature Group</button>
+                            <p>{{ language[languageValue].footerC5TitleB }}</p>
+                            <p>{{ language[languageValue].footerC5TitleDescription }}</p>
+                            <button>{{ language[languageValue].footerC5TitleButton }}</button>
                         </div>
                     </div>
                 </div>
@@ -351,7 +348,6 @@
                 </div>
             </div>
         </div>
-        {{ message }}
     </div>
     <script src="index.js"></script>
 
