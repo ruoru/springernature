@@ -1,7 +1,7 @@
 var app = new Vue({ 
   el: '#app',
   data: {
-    languageValue: 'EN',
+    languageValue: 'ZH',
   	language: {
       ZH: {
         nav1: '首页',
